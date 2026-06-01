@@ -1214,12 +1214,13 @@
         <div class="cert-btn">View Certificate <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
       </a>
 
+
     </div>
 
     <h3 class="cert-subsection-title fade-in">Certificate Collections</h3>
     <div class="folders-grid">
       <a href="https://drive.google.com/drive/folders/1TVE5mWCM11kj31M2fvEIjIMZYRgOcoFQ?usp=sharing" target="_blank" rel="noopener" class="folder-card fade-in">
-        <div class="folder-icon">📁</div>
+        <div class="folder-icon" style="background:linear-gradient(135deg,#0056d2,#00b0d8);border-radius:10px;width:42px;height:42px;display:flex;align-items:center;justify-content:center;font-size:1.3rem;color:#fff;font-weight:800;">C</div>
         <div class="folder-info">
           <div class="folder-name">Coursera</div>
           <div class="folder-sub">Browse all Coursera certificates</div>
@@ -1227,13 +1228,70 @@
         <div class="folder-arrow">&#8599;</div>
       </a>
       <a href="https://drive.google.com/drive/folders/1iTYrgwhiRu74D0jNHN0FnwSGlLISEH1Z?usp=sharing" target="_blank" rel="noopener" class="folder-card fade-in" style="transition-delay:.1s">
-        <div class="folder-icon">📂</div>
+        <div class="folder-icon" style="background:linear-gradient(135deg,#0077b5,#00a0dc);border-radius:10px;width:42px;height:42px;display:flex;align-items:center;justify-content:center;font-size:1.3rem;color:#fff;font-weight:800;">in</div>
         <div class="folder-info">
           <div class="folder-name">LinkedIn Learning</div>
           <div class="folder-sub">Browse all LinkedIn Learning certificates</div>
         </div>
         <div class="folder-arrow">&#8599;</div>
       </a>
+      <div class="folder-card fade-in" style="transition-delay:.2s;cursor:pointer;" onclick="document.getElementById('accenture-modal').style.display='flex'">
+        <div class="folder-icon">🏢</div>
+        <div class="folder-info">
+          <div class="folder-name">Certificates in Accenture</div>
+          <div class="folder-sub">5 Accenture LearnVantage certificates</div>
+        </div>
+        <div class="folder-arrow">&#8599;</div>
+      </div>
+      <a href="https://drive.google.com/drive/folders/1olPWTXc2mvQQC6kpBJpdGsUAMLNHNyD3?usp=sharing" target="_blank" rel="noopener" class="folder-card fade-in" style="transition-delay:.3s;">
+        <div class="folder-icon">🤖</div>
+        <div class="folder-info">
+          <div class="folder-name">Artificial Intelligence</div>
+          <div class="folder-sub">6 AI & Machine Learning certificates</div>
+        </div>
+        <div class="folder-arrow">&#8599;</div>
+      </a>
+    </div>
+
+    <!-- ACCENTURE MODAL -->
+    <div id="accenture-modal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.85);z-index:9999;align-items:center;justify-content:center;" onclick="if(event.target===this)this.style.display='none'">
+      <div style="background:#1a1f2e;border-radius:16px;padding:2rem;max-width:600px;width:90%;max-height:80vh;overflow-y:auto;position:relative;">
+        <button onclick="document.getElementById('accenture-modal').style.display='none'" style="position:absolute;top:1rem;right:1rem;background:none;border:none;color:#94a3b8;font-size:1.5rem;cursor:pointer;">✕</button>
+        <div style="display:flex;align-items:center;gap:1rem;margin-bottom:1.5rem;">
+          <div style="font-size:2.5rem;">🏢</div>
+          <div>
+            <div style="font-size:1.2rem;font-weight:800;color:#f1f5f9;">Certificates in Accenture</div>
+            <div style="font-size:0.85rem;color:#94a3b8;">Accenture LearnVantage — May 2026</div>
+          </div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:0.75rem;">
+          <a href="https://drive.google.com/file/d/1q80rshTrT0PuUejWtqudh7MZr2-poJik/view?usp=sharing" target="_blank" style="display:flex;align-items:center;gap:1rem;padding:1rem;background:#0d1424;border-radius:10px;text-decoration:none;border:1px solid #1e2d45;transition:border-color 0.2s;" onmouseover="this.style.borderColor='#2563eb'" onmouseout="this.style.borderColor='#1e2d45'">
+            <div style="font-size:1.5rem;">☁️</div>
+            <div style="flex:1;"><div style="color:#f1f5f9;font-weight:600;font-size:0.9rem;">AWS Cloud - App Dev Primer</div><div style="color:#94a3b8;font-size:0.78rem;">Accenture LearnVantage</div></div>
+            <div style="color:#2563eb;font-size:0.8rem;font-weight:600;">View ↗</div>
+          </a>
+          <a href="https://drive.google.com/file/d/1IoX0icyoKo3QZUhm_PiFyMgBq9hJp8LV/view?usp=sharing" target="_blank" style="display:flex;align-items:center;gap:1rem;padding:1rem;background:#0d1424;border-radius:10px;text-decoration:none;border:1px solid #1e2d45;transition:border-color 0.2s;" onmouseover="this.style.borderColor='#2563eb'" onmouseout="this.style.borderColor='#1e2d45'">
+            <div style="font-size:1.5rem;">🗄️</div>
+            <div style="flex:1;"><div style="color:#f1f5f9;font-weight:600;font-size:0.9rem;">MySQL Database - App Dev Primer</div><div style="color:#94a3b8;font-size:0.78rem;">Accenture LearnVantage</div></div>
+            <div style="color:#2563eb;font-size:0.8rem;font-weight:600;">View ↗</div>
+          </a>
+          <a href="https://drive.google.com/file/d/1Xfl8aMp4NUipNfn4CumEENF9I38xPE2s/view?usp=sharing" target="_blank" style="display:flex;align-items:center;gap:1rem;padding:1rem;background:#0d1424;border-radius:10px;text-decoration:none;border:1px solid #1e2d45;transition:border-color 0.2s;" onmouseover="this.style.borderColor='#2563eb'" onmouseout="this.style.borderColor='#1e2d45'">
+            <div style="font-size:1.5rem;">☕</div>
+            <div style="flex:1;"><div style="color:#f1f5f9;font-weight:600;font-size:0.9rem;">Java Programming - App Dev Primer</div><div style="color:#94a3b8;font-size:0.78rem;">Accenture LearnVantage</div></div>
+            <div style="color:#2563eb;font-size:0.8rem;font-weight:600;">View ↗</div>
+          </a>
+          <a href="https://drive.google.com/file/d/1h5EoBrRrZQt-dbgCJficmd9ZPFAbqfW6/view?usp=sharing" target="_blank" style="display:flex;align-items:center;gap:1rem;padding:1rem;background:#0d1424;border-radius:10px;text-decoration:none;border:1px solid #1e2d45;transition:border-color 0.2s;" onmouseover="this.style.borderColor='#2563eb'" onmouseout="this.style.borderColor='#1e2d45'">
+            <div style="font-size:1.5rem;">📝</div>
+            <div style="flex:1;"><div style="color:#f1f5f9;font-weight:600;font-size:0.9rem;">App Dev Primer - Assessments</div><div style="color:#94a3b8;font-size:0.78rem;">Accenture LearnVantage</div></div>
+            <div style="color:#2563eb;font-size:0.8rem;font-weight:600;">View ↗</div>
+          </a>
+          <a href="https://drive.google.com/file/d/1U_3AG154Em0OSwXyvOVlug0ALDMbxc31/view?usp=sharing" target="_blank" style="display:flex;align-items:center;gap:1rem;padding:1rem;background:#0d1424;border-radius:10px;text-decoration:none;border:1px solid #1e2d45;transition:border-color 0.2s;" onmouseover="this.style.borderColor='#2563eb'" onmouseout="this.style.borderColor='#1e2d45'">
+            <div style="font-size:1.5rem;">💻</div>
+            <div style="flex:1;"><div style="color:#f1f5f9;font-weight:600;font-size:0.9rem;">App Dev Primer - Main</div><div style="color:#94a3b8;font-size:0.78rem;">Accenture LearnVantage</div></div>
+            <div style="color:#2563eb;font-size:0.8rem;font-weight:600;">View ↗</div>
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
